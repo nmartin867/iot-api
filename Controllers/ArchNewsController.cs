@@ -1,3 +1,5 @@
+using IotApi.DTOs;
+using IotApi.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IotApi.Controllers;
@@ -6,10 +8,15 @@ namespace IotApi.Controllers;
 [Route("[controller]")]
 public class ArchNewsController : ControllerBase
 {
-    private readonly ILogger<ArchNewsController> _logger;
+    private readonly IArchNewsService _archNewsService;
 
-    public ArchNewsController(ILogger<ArchNewsController> logger)
+    public ArchNewsController(IArchNewsService archNewsService)
     {
-        _logger = logger;
+        _archNewsService = archNewsService;
+    }
+    [HttpGet]
+    public async Task<RssFeedResult> Get()
+    {
+        return await _archNewsService.GetRssFeed();
     }
 }
