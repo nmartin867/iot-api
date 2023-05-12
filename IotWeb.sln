@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IotApi", "api\IotApi.csproj", "{2F20AB6D-DC63-4BFF-B495-DFADE51FE9CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IotApi.Tests", "IotApi.Tests\IotApi.Tests.csproj", "{08F4C83C-9A75-41E7-A806-ED12FF5FA0FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F20AB6D-DC63-4BFF-B495-DFADE51FE9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F20AB6D-DC63-4BFF-B495-DFADE51FE9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F20AB6D-DC63-4BFF-B495-DFADE51FE9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F20AB6D-DC63-4BFF-B495-DFADE51FE9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F4C83C-9A75-41E7-A806-ED12FF5FA0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F4C83C-9A75-41E7-A806-ED12FF5FA0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F4C83C-9A75-41E7-A806-ED12FF5FA0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F4C83C-9A75-41E7-A806-ED12FF5FA0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
