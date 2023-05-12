@@ -1,4 +1,4 @@
-namespace IotApi.DTOs;
+namespace IotApi.Model;
 
 public class RssFeedResult
 {

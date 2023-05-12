@@ -1,5 +1,6 @@
 using CodeHollow.FeedReader;
-using IotApi.DTOs;
+using IotApi.Model;
+using IotApi.Model.Configuration;
 using Microsoft.Extensions.Options;
 
 namespace IotApi.Services;
@@ -11,16 +12,16 @@ public interface IArchNewsService
 
 public class ArchNewsService : IArchNewsService
 {
-    private readonly ArchNewsSettings _rssSettings;
+    private readonly ArchNewsConfiguration _rssConfiguration;
     
-    public ArchNewsService(IOptions<ArchNewsSettings> options)
+    public ArchNewsService(IOptions<ArchNewsConfiguration> options)
     {
-        _rssSettings = options.Value;
+        _rssConfiguration = options.Value;
     }
 
     public async Task<RssFeedResult> GetRssFeed()
     {
-        var feed = await FeedReader.ReadAsync(_rssSettings.HostUrl);
+        var feed = await FeedReader.ReadAsync(_rssConfiguration.HostUrl);
         return new RssFeedResult
         {
             Description = feed.Description,

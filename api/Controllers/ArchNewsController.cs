@@ -1,4 +1,4 @@
-using IotApi.DTOs;
+using IotApi.Model;
 using IotApi.Services;
 using Microsoft.AspNetCore.Mvc;
 
